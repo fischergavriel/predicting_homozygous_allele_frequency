@@ -23,3 +23,7 @@ def homozygosity_freq(allele_pool):
     freq = (100 * homozygous_genotypes) / len(list_of_genotypes)
     print(str(round(freq, 2)) + "%")
     return freq
+
+list_of_alleles = (7 * ["A1"]) + (4 * ["A2"]) + (3 * ["A3"]) + (2 * ["A4"]) + (2 * ["A5"]) + (2 * ["A6"]) + (1 * ["A7"]) + (1 * ["A8"]) + (1 * ["A9"]) + (1 * ["A10"])
+
+homozygosity_freq(list_of_alleles)
