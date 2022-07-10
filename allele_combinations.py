@@ -12,7 +12,7 @@ def homozygosity_freq(allele_pool):
     list_of_genotypes = []
     matching_index = 0
     for i in allele_pool:
-        for j in allele_pool[matching_index:23]:
+        for j in allele_pool[matching_index:len(allele_pool) - 1]:
             list_of_genotypes.append([i, j])
         matching_index += 1
 
